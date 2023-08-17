@@ -1,0 +1,88 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para centrar los elementos input y hacerlos más grandes */
+.centered-input {
+    display: block;
+    margin: 0 auto;
+    width: 80%; /* Ajusta el ancho como desees */
+    padding: 10px; /* Agrega un relleno para hacerlo más grande */
+    font-size: 18px; /* Ajusta el tamaño de fuente */
+    border: 13px solid #ccc; /* Agrega un borde para mayor claridad */
+    border-radius: 5px; /* Borde redondeado */
+    box-sizing: border-box; /* Asegura que el relleno y el borde estén incluidos en el ancho */
+}
+
+/* Contenedor para el teclado */
+#keyboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 684px;
+    gap: 5px;
+    margin: 100px auto;
+}
+
+/* Estilo para cada capa del teclado */
+.layer {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilo para cada tecla */
+.key {
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Estilos específicos para cada tipo de tecla */
+.key-normal {
+    width: 50px;
+    height: 70px;
+}
+
+.key-mayus {
+    width: 120px;
+    height: 70px;
+}
+
+.key-shift {
+    width: 80px;
+    height: 70px;
+}
+
+.key-space {
+    width: 400px;
+    height: 70px;
+}
+
+/* Cambio de estilo al pasar el cursor sobre la tecla */
+.key:hover {
+    background-color: #555;
+}
+
+/* Estilo para la tecla vacía */
+.key-empty {
+    width: 25px;
+    height: 70px;
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para teclas activadas (por ejemplo, mayúsculas o shift) */
+.activated {
+    outline: greenyellow solid 2px;
+}
